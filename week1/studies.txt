@@ -1,0 +1,12 @@
+1-Bir dosyayı okumak için ReadFile fonksiyonunu çalıştırdım fakat bir durumda okuma işlemine gerek kalmadı.Bu yüzden işlemi iptal etmek istiyorum.Programın devamında dosya okuma işlemini nasıl iptal edebilirim?
+Cevap:AbortController nesnesi kullanılarak iptal edilebilir.
+
+2-readFile fonksiyonu dosyayı bütün halinde okuyup memoryye alır.Programın daha az memory kullanmasını sağlamak için alternatif olarak neler kullanılabilir?
+Cevap:Cevabını bulamadım.
+
+3-KOA
+Cevap:Koa Express’in kurucu topluluğu tarafınca geliştirilmiş olup, API ve web uygulama geliştirme sürecinde daha küçük, basit, ve sağlam temel olmayı hedeflemektedir. Ek olarak, Koa asenkron fonksiyonlarına daha çok yer vermekte olup, callback kullanımından kaçınmamıza olanak sağlayarak error-handling sürecini kolaylaştırmaktadır.
+
+
+
+
