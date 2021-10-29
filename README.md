@@ -1,7 +1,7 @@
  <img width="500" src="https://epnext.com/wp-content/uploads/2021/08/AloTech_Gorsel.jpg"/>
 
 ## **<span style="color:pink"> NODEJS </span>** </br>
- <s>[WEEK 1-NodeJs Basics](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week1) :white_check_mark:</s> </br> 
+ <s>[WEEK 1-NodeJs Basics](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week1) :white_check_mark: </s> </br> 
  WEEK 2-PCAT </br>
  WEEK 3-SmartEdu
 
