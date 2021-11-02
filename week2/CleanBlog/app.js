@@ -1,29 +1,31 @@
-const express=require('express')
-const ejs=require('ejs')
-const path=require('path')
+const express=require('express');
+const ejs=require('ejs');
+const path=require('path');
 const app=express();
 //template engine
 app.set("view engine","ejs");
 
 //MIDDLEWARE(req-response arasındaki hersey) 
-app.use(express.static('public')) //public folder for static files
+app.use(express.static('public'))//static contents
 
 //Routing
-app.get('/index.html',(req,res)=>{
-    res.render("index")
+app.get('/',(req,res)=>{
+    res.render('index');
 });
-app.get('/about.html',(req,res)=>{
-    res.render("about")
+app.get('/about',(req,res)=>{
+    res.render('about');
 });
-app.get('/add_post.html',(req,res)=>{
-    res.render("add_post")
+app.get('/add',(req,res)=>{
+    res.render('add_post');
 });
-
-
-
-
 
 const port=5000;
 app.listen(port,()=>{
     console.log(`server started on port ${port}..`)
-})
+});
+/*var connect = require("connect");
+
+var app = connect().use(connect.static(__dirname + '/views'));
+
+app.listen(8180);
+*/
