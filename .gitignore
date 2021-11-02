@@ -124,5 +124,5 @@ dist
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
-
 # End of https://www.toptal.com/developers/gitignore/api/node
+#week2/CleanBlog/public
