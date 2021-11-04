@@ -1,31 +1,44 @@
-const express=require('express');
+const express=require('express'); 
+require('dotenv').config();
 const ejs=require('ejs');
-const path=require('path');
+const mongoose=require('mongoose');
+const methodOverride=require('method-override');
+const pageController=require('./controllers/pageController')
+const postController=require('./controllers/postController')
 const app=express();
-//template engine
+
+//Connect Database 
+mongoose.connect(process.env.MONGO,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true 
+}).then(()=>{console.log(`mongodb connected!`)})
+.catch((err)=>{console.error(err); console.log('HATA VAR')});
+
+//Template Engine
 app.set("view engine","ejs");
-
-//MIDDLEWARE(req-response arasındaki hersey) 
+//Middlewares
 app.use(express.static('public'))//static contents
-
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+app.use(
+   methodOverride('_method',{
+      methods:['POST','GET']
+    })
+);
 //Routing
-app.get('/',(req,res)=>{
-    res.render('index');
-});
-app.get('/about',(req,res)=>{
-    res.render('about');
-});
-app.get('/add',(req,res)=>{
-    res.render('add_post');
-});
 
-const port=5000;
+app.get('/',postController.getAllPosts);
+app.get('/posts/:id',postController.getPost);
+app.post('/posts', postController.createPost);
+app.put('/posts/:id',postController.updatePost);
+app.get('/posts/edit/:id',pageController.getEditPage);
+app.get("/about",pageController.getAboutPage);
+app.get("/add",pageController.getAddPage);
+app.delete('/post/:id',postController.deletePost);
+
+//port settings
+const port=5022;
 app.listen(port,()=>{
     console.log(`server started on port ${port}..`)
 });
-/*var connect = require("connect");
 
-var app = connect().use(connect.static(__dirname + '/views'));
-
-app.listen(8180);
-*/
