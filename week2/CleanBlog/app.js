@@ -35,7 +35,7 @@ app.get('/posts/edit/:id', pageController.getEditPage);
 app.get("/about", pageController.getAboutPage);
 app.get("/add", pageController.getAddPage);
 
-//port settingss
+//port settings
 /*const port=5000;
 app.listen(port,()=>{
     console.log(`server started on port ${port}..`)
