@@ -1,7 +1,6 @@
 const Post=require("../models/Posts");
 const fs=require("fs");
 exports.getAllPosts=async(req,res)=>{
-
     const posts=await Post.find({}).sort("-dateCreated")
     console.log(posts)
     res.render("index",{
@@ -32,5 +31,6 @@ exports.createPost=function(req,res){
      await Post.findByIdAndRemove(req.params.id);
      res.redirect("/");
  };
+
  
  
