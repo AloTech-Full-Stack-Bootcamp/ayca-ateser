@@ -26,18 +26,17 @@ app.use(
     })
 );
 //Routing
-
-app.get('/',postController.getAllPosts);
-app.get('/posts/:id',postController.getPost);
+app.get('/', postController.getAllPosts);
+app.get('/posts/:id', postController.getPost);
 app.post('/posts', postController.createPost);
-app.put('/posts/:id',postController.updatePost);
-app.get('/posts/edit/:id',pageController.getEditPage);
-app.get("/about",pageController.getAboutPage);
-app.get("/add",pageController.getAddPage);
-app.delete('/post/:id',postController.deletePost);
+app.put('/posts/:id', postController.updatePost);
+app.delete('/posts/:id', postController.deletePost);
+app.get('/posts/edit/:id', pageController.getEditPage);
+app.get("/about", pageController.getAboutPage);
+app.get("/add", pageController.getAddPage);
 
-//port settings
-const port=5022;
+//port settingss
+const port=5000;
 app.listen(port,()=>{
     console.log(`server started on port ${port}..`)
 });
