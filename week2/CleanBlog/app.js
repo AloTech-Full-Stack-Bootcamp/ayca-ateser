@@ -6,9 +6,9 @@ const methodOverride=require('method-override');
 const pageController=require('./controllers/pageController')
 const postController=require('./controllers/postController')
 const app=express();
-
+MONGO="mongodb+srv://admin:12345@cluster0.bueut.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 //Connect Database 
-mongoose.connect(process.env.MONGO,{
+mongoose.connect(MONGO,{
     useNewUrlParser:true,
     useUnifiedTopology:true 
 }).then(()=>{console.log(`mongodb connected!`)})
