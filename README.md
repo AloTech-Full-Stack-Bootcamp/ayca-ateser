@@ -7,7 +7,7 @@
 ## **<span style="color:pink"> NODEJS </span>** </br>
  <s>[WEEK 1-NodeJs Basics](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week1) :white_check_mark: </s> </br> 
  <s>[WEEK 2-CleanBlog Project](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week2) :white_check_mark:</s></br>
- WEEK 3-SmartEdu-Medium Article
+ <s>[WEEK 3-SmartEdu-Medium Article](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week3):white_check_mark:</s></br>
 
  ## **<span style="color:pink"> REACTJS </span>** </br>
  WEEK 4 </br>
