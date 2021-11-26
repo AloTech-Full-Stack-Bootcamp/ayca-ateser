@@ -112,6 +112,10 @@ function App() {
       title: "Hangout with friends",
       completed: false,
     },
+    {
+      title: "Heroku deploy",
+      completed: false,
+    },
   ]);
 
   useEffect(() => {
