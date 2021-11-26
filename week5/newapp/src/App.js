@@ -113,7 +113,7 @@ function App() {
       completed: false,
     },
     {
-      title: "Heroku deploy",
+      title: "Heroku deploy today",
       completed: false,
     },
   ]);
