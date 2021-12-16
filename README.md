@@ -14,11 +14,11 @@
 ## **<span style="color:pink"> REACTJS </span>** </br>
 
 <S>[WEEK 4 -Movie Tracker App](https://github.com/AloTech-Full-Stack-Bootcamp/ayca-ateser/tree/main/week4) :white_check_mark:</s></br>
-WEEK 5 - TODO APP with REACT.Published with HEROKU. Deployment Link---->https://serene-escarpment-34266.herokuapp.com/</br>
-WEEK 6
+WEEK 5 - TODO APP with REACT.Published with HEROKU. Deployment Link---->https://serene-escarpment-34266.herokuapp.com/ :white_check_mark:</br>
+WEEK 6 :white_check_mark:
 
 ## **<span style="color:pink"> DJANGO</span>**
 
-WEEK 7</br>
+WEEK 7 :white_check_mark:</br>
 WEEK 8</br>
 WEEK 9
